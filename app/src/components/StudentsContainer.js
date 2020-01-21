@@ -6,7 +6,11 @@ function StudentsContainer(props) {
   
   return (
     <div className="students-container">
-      <StudentCard />
+      {
+        props.studentsData.map(student => {
+          return <StudentCard student={student} />
+        })
+      }
     </div>
   );
 }
