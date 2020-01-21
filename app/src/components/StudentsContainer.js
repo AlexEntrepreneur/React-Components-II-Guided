@@ -1,9 +1,12 @@
 import React from 'react';
+import StudentCard from './StudentCard';
 
-function StudentsContainer() {
+function StudentsContainer(props) {
+  console.log(props.studentsData);
+  
   return (
     <div className="students-container">
-      Students
+      <StudentCard />
     </div>
   );
 }
