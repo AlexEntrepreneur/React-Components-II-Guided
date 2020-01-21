@@ -1,4 +1,5 @@
 import React from 'react';
+import StudentsContainer from './components/StudentsContainer';
 
 function App() {
 	return (
@@ -6,6 +7,7 @@ function App() {
 			<header>
 				<h1>React Components II</h1>
 			</header>
+      <StudentsContainer />
 		</div>
 	);
 }
